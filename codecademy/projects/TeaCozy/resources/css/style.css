@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    opacity: 0.9;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3.14rem;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 0.45rem;
+}
+
+.logo img {
+    height: 2.27rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 0.45rem;
+}
+
+nav ul li {
+    margin-left: 0.91rem;
+}
+
+nav ul li a {
+    color: seashell;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+main {
+    margin-top: 3.14rem;
+}
+
+.mission {
+    height: 31.82rem;
+    background-image: url('../images/img-mission-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mission-content {
+    background-color: black;
+    padding: 0.91rem 1.82rem;
+    max-width: 36.36rem;
+}
+
+.mission h2 {
+    font-size: 2rem;
+    margin-bottom: 0.91rem;
+}
+
+.mission h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.tea-month {
+    max-width: 45.45rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.73rem 0;
+}
+
+.tea-month h2 {
+    font-size: 2rem;
+    margin-bottom: 1.82rem;
+}
+
+.tea-month h4 {
+    font-size: 1rem;
+    margin-bottom: 1.82rem;
+    font-weight: normal;
+}
+
+.tea-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.91rem;
+    margin-bottom: 1.82rem;
+    max-width: 100%;
+}
+
+.tea-item {
+    width: 13.64rem;
+    text-align: center;
+}
+
+.tea-item img {
+    width: 100%;
+    height: 9.09rem;
+    object-fit: cover;
+}
+
+.tea-item h4 {
+    font-size: 1rem;
+    margin-top: 0.45rem;
+    font-weight: bold;
+}
+
+.locations {
+    height: 22.73rem;
+    background-image: url('resources/images/img-locations-background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.locations h2 {
+    font-size: 2rem;
+    margin-bottom: 1.82rem;
+}
+
+.locations-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.82rem;
+    max-width: 46.36rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.location {
+    background-color: black;
+    flex: 1;
+    max-width: 13.64rem;
+    padding: 1.82rem 0.91rem;
+    text-align: center;
+}
+
+.location h3 {
+    font-size: 1rem;
+    margin-bottom: 0.68rem;
+    font-weight: bold;
+}
+
+.location p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.45rem;
+}
+
+footer {
+    height: 9.09rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 0.91rem;
+}
+
+footer .contact p {
+    font-size: 1rem;
+    margin-bottom: 0.23rem;
+}
+
+footer>div>p:last-child {
+    margin-top: 0.91rem;
+    font-size: 1rem;
+    text-align: left;
+}
+
+@media (max-width: 54.55rem) {
+    .tea-month {
+        width: 95%;
+        padding: 1.82rem 0.91rem;
+    }
+
+    .locations-container {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.91rem;
+    }
+
+    .location {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 34.91rem) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 0.45rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 0.68rem;
+        margin-right: 0;
+    }
+
+    main {
+        margin-top: 4.55rem;
+    }
+
+    .mission h2,
+    .tea-month h2,
+    .locations h2,
+    footer h2 {
+        font-size: 1.45rem;
+    }
+
+    .tea-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tea-item {
+        width: 12.73rem;
+    }
+
+    .tea-item img {
+        height: 8.18rem;
+    }
+}
