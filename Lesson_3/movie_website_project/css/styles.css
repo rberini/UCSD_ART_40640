@@ -1,0 +1,160 @@
+/* 
+Apply class and id attributes to your HTML page structure where you see fit. Use (at minimum) the following CSS properties to style your page:
+
+background-color
+color
+font-size
+font-weight
+width
+margin
+padding
+display
+list-style
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 100%;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    color: #FCFCFC;
+    line-height: 120%;
+    background-color: #001326;
+    background-image: linear-gradient(to bottom right, #001326 0%, #2C4F6E 100%);
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+nav {
+    margin: auto;
+    max-width: 50%;
+}
+
+nav ul {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #EE1D23;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #EE1D23;
+    margin-top: .625rem;
+    margin-bottom: .625rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: #FCFCFC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ADE0EE;
+    text-decoration: underline;
+}
+
+#synopsis, #details, #similar {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.director {
+    padding-top: 0;
+}
+
+.playing {
+    opacity: 0.75;
+}
+
+.character {
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 0.75rem;
+    color: #FCFCFC;
+}
+
+@media screen and (max-width: 768px) {
+    nav, img, #synopsis, #details, #similar {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        letter-spacing: .375rem;
+        padding: .5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    img, #synopsis, #details, #similar {
+        max-width: 100%;
+    }
+
+    nav {
+        display: none
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: .25rem;
+        padding: 0;
+    }
+    
+}
