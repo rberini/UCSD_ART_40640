@@ -1,21 +1,7 @@
-/* 
-Apply class and id attributes to your HTML page structure where you see fit. Use (at minimum) the following CSS properties to style your page:
-
-background-color
-color
-font-size
-font-weight
-width
-margin
-padding
-display
-list-style
-*/
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 html {
@@ -103,7 +89,9 @@ a:hover {
     text-decoration: underline;
 }
 
-#synopsis, #details, #similar {
+#synopsis,
+#details,
+#similar {
     display: block;
     max-width: 50%;
     height: auto;
@@ -138,11 +126,16 @@ footer {
         letter-spacing: .5rem;
         padding: .75rem;
     }
-    
+
 }
 
 @media screen and (max-width: 768px) {
-    nav, img, #synopsis, #details, #similar {
+
+    nav,
+    img,
+    #synopsis,
+    #details,
+    #similar {
         max-width: 80%;
     }
 
@@ -154,7 +147,11 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    img, #synopsis, #details, #similar {
+
+    img,
+    #synopsis,
+    #details,
+    #similar {
         max-width: 100%;
     }
 
@@ -167,5 +164,5 @@ footer {
         letter-spacing: .25rem;
         padding: 0;
     }
-    
+
 }
