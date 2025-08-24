@@ -206,10 +206,6 @@ main {
     margin: 0;
 }
 
-
-
-
-
 .members-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -346,6 +342,55 @@ main {
     transform: translateY(-2px);
 }
 
+.influences-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.influence-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.influence-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.influence-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.influence-item:hover .influence-img {
+    border-color: #FCFCFC;
+    transform: scale(1.05);
+}
+
+.influence-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FCFCFC;
+    margin: 0;
+    line-height: 1.2;
+}
+
 @media (min-width: 768px) {
     .hamburger-menu {
         display: block;
@@ -403,6 +448,21 @@ main {
         max-width: 200px;
         margin: 0 auto;
     }
+
+    .influences-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin: 3rem 0;
+    }
+    
+    .influence-img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .influence-item h4 {
+        font-size: 1.1rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -430,5 +490,25 @@ main {
     
     .merch-img {
         height: 220px;
+    }
+    
+    .influences-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+        max-width: 1200px;
+        margin: 3rem auto;
+    }
+    
+    .influence-img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .influence-item {
+        padding: 1.5rem;
+    }
+    
+    .influence-item h4 {
+        font-size: 1.2rem;
     }
 }
