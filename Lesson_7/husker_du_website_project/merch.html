@@ -14,34 +14,39 @@
 </head>
 
 <body>
+
     <header>
         <!-- Header Text -->
-        <h1 class="header-text">H&#220;SKER D&#220; MERCH</h1>
+        <h1 class="header-text" aria-label="Husker Du">H&#220;SKER D&#220;</h1>
         <!-- Hamburger Menu -->
-        <div class="hamburger-menu">
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+        <div class="hamburger-menu" aria-label="Main menu" role="navigation">
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-controls="main-navigation" aria-expanded="false">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
             </button>
             <!-- Navigation -->
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="discography.html">Discography</a></li>
-                    <li><a href="merch.html">Merch</a></li>
-                    <li><a href="legacy.html">Legacy</a></li>
+            <nav class="main-nav" aria-label="Primary" role="navigation">
+                <ul role="menubar">
+                    <li role="none"><a href="index.html" aria-label="Home page" role="menuitem">Home</a></li>
+                    <li role="none"><a href="about.html" aria-label="About Husker Du" role="menuitem">About</a></li>
+                    <li role="none"><a href="discography.html" aria-label="Husker Du Discography" role="menuitem">Discography</a></li>
+                    <li role="none"><a href="merch.html" aria-label="Merchandise" role="menuitem">Merch</a></li>
+                    <li role="none"><a href="legacy.html" aria-label="Legacy of Husker Du" role="menuitem">Legacy</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+
+        <!-- Merch Intro -->
         <section>
             <h2>Hüsker Dü Merchandise</h2>
             <p>Essential Hüsker Dü merchandise featuring classic designs and iconic imagery from their legendary eight-year run.</p>
         </section>
+
+        <!-- Apparel -->
         <section id="apparel">
             <h3>T-Shirts & Apparel</h3>
             <ul class="merch-list">
@@ -71,6 +76,8 @@
                 </li>
             </ul>
         </section>
+
+        <!-- Posters -->
         <section id="posters">
             <h3>Concert Posters</h3>
             <ul class="merch-list">
@@ -100,6 +107,8 @@
                 </li>
             </ul>
         </section>
+
+        <!-- Buttons, Pins & Patches -->
         <section id="pins-patches">
             <h3>Buttons, Pins & Patches</h3>
             <ul class="merch-list">
@@ -141,5 +150,7 @@
                 </li>
             </ul>
         </section>
+
     </main>
+    
 </body>

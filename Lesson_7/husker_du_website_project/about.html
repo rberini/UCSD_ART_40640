@@ -14,34 +14,39 @@
 </head>
 
 <body>
+
     <header>
         <!-- Header Text -->
-        <h1 class="header-text">ABOUT H&#220;SKER D&#220;</h1>
+        <h1 class="header-text" aria-label="Husker Du">H&#220;SKER D&#220;</h1>
         <!-- Hamburger Menu -->
-        <div class="hamburger-menu">
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+        <div class="hamburger-menu" aria-label="Main menu" role="navigation">
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-controls="main-navigation" aria-expanded="false">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
             </button>
             <!-- Navigation -->
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="discography.html">Discography</a></li>
-                    <li><a href="merch.html">Merch</a></li>
-                    <li><a href="legacy.html">Legacy</a></li>
+            <nav class="main-nav" aria-label="Primary" role="navigation">
+                <ul role="menubar">
+                    <li role="none"><a href="index.html" aria-label="Home page" role="menuitem">Home</a></li>
+                    <li role="none"><a href="about.html" aria-label="About Husker Du" role="menuitem">About</a></li>
+                    <li role="none"><a href="discography.html" aria-label="Husker Du Discography" role="menuitem">Discography</a></li>
+                    <li role="none"><a href="merch.html" aria-label="Merchandise" role="menuitem">Merch</a></li>
+                    <li role="none"><a href="legacy.html" aria-label="Legacy of Husker Du" role="menuitem">Legacy</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+
+        <!-- The Husker Du Story -->
         <section>
-            <h2>The H&#252;sker D&#252; Story</h2>
+            <h2 aria-label="The Husker Du Story">The H&#252;sker D&#252; Story</h2>
             <p>From their formation in Saint Paul, Minnesota in 1979 to their breakup in 1987, Hüsker Dü transformed from hardcore punk pioneers into one of the most influential alternative rock bands of the 1980s.</p>
         </section>
+
+        <!-- Band Members -->
         <section class="band-members">
             <h3>Band Members</h3>
             <div class="members-grid">
@@ -77,24 +82,29 @@
                 </div>
             </div>
         </section>
-    <section class="timeline-section">
-        <h3>Timeline</h3>
-        <div class="timeline">
-            <div class="timeline-item">
-                <span class="timeline-period">1979-1982</span>
-                <h4>Formation & Early Years</h4>
-                <p>Bob Mould, Grant Hart, and Greg Norton came together in the Minneapolis punk scene, initially playing covers before developing their own blistering hardcore sound.</p>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-period">1983-1985</span>
-                <h4>Creative Peak</h4>
-                <p>The band's most productive period saw the release of 'Zen Arcade,' an ambitious double-album that proved punk could be both experimental and emotionally complex.</p>
-            </div>
-            <div class="timeline-item">
-                <span class="timeline-period">1986-1987</span>
-                <h4>Major Label Era & Breakup</h4>
-                <p>Their move to Warner Bros. Records brought wider exposure but also internal tensions that ultimately led to the band's dissolution in 1987.</p>
-            </div>
-        </div>
-    </section>
+
+        <!-- Band Timeline -->
+        <section class="timeline-section">
+            <h3>Timeline</h3>
+            <ul class="timeline" role="list" aria-label="Husker Du band timeline">
+                <li class="timeline-item" role="listitem">
+                    <span class="timeline-period" aria-label="Time period 1979 to 1982">1979&#8211;1982</span>
+                    <h4>Formation & Early Years</h4>
+                    <p>Bob Mould, Grant Hart, and Greg Norton came together in the Minneapolis punk scene, initially playing covers before developing their own blistering hardcore sound.</p>
+                </li>
+                <li class="timeline-item" role="listitem">
+                    <span class="timeline-period" aria-label="Time period 1983 to 1985">1983&#8211;1985</span>
+                    <h4>Creative Peak</h4>
+                    <p>The band's most productive period saw the release of 'Zen Arcade,' an ambitious double-album that proved punk could be both experimental and emotionally complex.</p>
+                </li>
+                <li class="timeline-item" role="listitem">
+                    <span class="timeline-period" aria-label="Time period 1986 to 1987">1986&#8211;1987</span>
+                    <h4>Major Label Era & Breakup</h4>
+                    <p>Their move to Warner Brothers Records brought wider exposure but also internal tensions that ultimately led to the band's dissolution in 1987.</p>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+
 </body>

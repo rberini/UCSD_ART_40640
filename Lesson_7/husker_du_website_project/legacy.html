@@ -14,38 +14,42 @@
 </head>
 
 <body>
+
     <header>
         <!-- Header Text -->
-        <h1 class="header-text">H&#220;SKER D&#220; LEGACY</h1>
+        <h1 class="header-text" aria-label="Husker Du">H&#220;SKER D&#220;</h1>
         <!-- Hamburger Menu -->
-        <div class="hamburger-menu">
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+        <div class="hamburger-menu" aria-label="Main menu" role="navigation">
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-controls="main-navigation" aria-expanded="false">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
             </button>
             <!-- Navigation -->
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="discography.html">Discography</a></li>
-                    <li><a href="merch.html">Merch</a></li>
-                    <li><a href="legacy.html">Legacy</a></li>
+            <nav class="main-nav" aria-label="Primary" role="navigation">
+                <ul role="menubar">
+                    <li role="none"><a href="index.html" aria-label="Home page" role="menuitem">Home</a></li>
+                    <li role="none"><a href="about.html" aria-label="About Husker Du" role="menuitem">About</a></li>
+                    <li role="none"><a href="discography.html" aria-label="Husker Du Discography" role="menuitem">Discography</a></li>
+                    <li role="none"><a href="merch.html" aria-label="Merchandise" role="menuitem">Merch</a></li>
+                    <li role="none"><a href="legacy.html" aria-label="Legacy of Husker Du" role="menuitem">Legacy</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+
+        <!-- Legacy Intro -->
         <section>
-            <h2>The Lasting Legacy of H&#252;sker D&#252;</h2>
+            <h2 aria-label="The Lasting Legacy of Hüsker Dü">The Lasting Legacy of H&#252;sker D&#252;</h2>
             <p>Though together for only eight years, their influence on alternative rock, indie music, and punk continues to resonate decades after their breakup.</p>
         </section>
 
+        <!-- Influences -->
         <section id="influences">
             <h3>Direct Musical Influences</h3>
-            <p>Bands directly citing H&#252;sker D&#252; as major influence:</p>
+            <p aria-label="Bands directly citing Husker Du as major influence">Bands directly citing H&#252;sker D&#252; as major influence:</p>
             
             <div class="influences-grid">
                 <div class="influence-item">
@@ -83,14 +87,17 @@
             </div>
         </section>
 
+        <!-- Critical Recognition -->
         <section>
             <h3>Critical Recognition</h3>
             <p>Rolling Stone listed 'Zen Arcade' as one of the 500 Greatest Albums of All Time. Pitchfork regularly features multiple albums in best-of decade lists.</p>
         </section>
-
+        
+        <!-- Musical Innovations -->
         <section>
             <h3>Musical Innovations</h3>
             <p>Loud-Quiet Dynamics • Melodic Hardcore • Double Album Ambition • Alternative Rock Blueprint • Emo Precursors</p>
         </section>
+
     </main>
 </body>
